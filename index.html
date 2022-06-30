@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX</title>
+  </head>
+  <body>
+    <p class="title">Свойства FLEX-контейнера</p>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">1</div>
+          <div class="t-text">
+            <p class="text-title">display: flex;</p>
+            <p class="sub-title">display: -webkit-flex;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение: <i>превращает дочерные элементы в flex-элементы.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения: <i>flex / inline-flex.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="block">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+          <p class="g-text">flex</p>
+        </div>
+        <div class="inner">
+          <div class="block inline">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+          <p class="g-text">inline-flex</p>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">2</div>
+          <div class="t-text">
+            <p class="text-title">flex-direction: row;</p>
+            <p class="sub-title">-webkit-flex-direction: row;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i
+              >меняет расположение элементов по осям(располагаются в ряд или
+              колону).</i
+            >
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i> row / row-reverse / column / column-reverse.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="box">
+            <div class="block row">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">row</p>
+            <div class="block row-reverse">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">row-reverse</p>
+          </div>
+          <div class="box">
+            <div class="column">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">column</p>
+            <div class="block column-reverse">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">column-reverse</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">3</div>
+          <div class="t-text">
+            <p class="text-title">flex-wrap: nowrap;</p>
+            <p class="sub-title">-webkit-flex-wrap: nowrap;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i>растположение элементов в одну или несколько строк.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i> nowrap / wrap / wrap-reverse.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="box add1">
+            <div class="block nowrap">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">nowrap</p>
+            <div class="block wrap">
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+            </div>
+            <p class="g-text">wrap</p>
+          </div>
+          <div class="box add1">
+            <div class="block wrap-reverse">
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+              <div class="item1"></div>
+            </div>
+            <p class="g-text">wrap-reverse</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">4</div>
+          <div class="t-text">
+            <p class="text-title">flex-flow: row nowrap;</p>
+            <p class="sub-title">-webkit-flex-flow: row nowrap;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i
+              >запись, которая сокращает написание свойств flex-direction и
+              flex-wrap.</i
+            >
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i> см свойства 2 и 3.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right"></div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">5</div>
+          <div class="t-text">
+            <p class="text-title">justify-content: flex-start;</p>
+            <p class="sub-title">-webkit-justify-content: flex-start;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i
+              >выравнивает flex-элементы по горизонтали (в случае с
+              flex-direction: column работает вместо align-items т. к.
+              направление оси поменялось).</i
+            >
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i>
+              flex-start / flex-end / center / space-between / space-around.</i
+            >
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="box">
+            <div class="block">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">flex-start</p>
+            <div class="block end">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">flex-end</p>
+          </div>
+          <div class="box">
+            <div class="center">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">center</p>
+            <div class="space-between">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">space-between</p>
+          </div>
+          <div class="box plus">
+            <div class="space-around">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">space-around</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">6</div>
+          <div class="t-text">
+            <p class="text-title">align-items: strech;</p>
+            <p class="sub-title">-webkit-align-items: strech;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i>выравнивает flex-элементы по вертикали.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i> strech / flex-strat / flex-end / center / baseline.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="box">
+            <div class="block strech">
+              <div class="item"></div>
+              <div class="item"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">strech</p>
+            <div class="block flex-start">
+              <div class="item2"></div>
+              <div class="item2"></div>
+              <div class="item2"></div>
+            </div>
+            <p class="g-text">flex-start</p>
+          </div>
+          <div class="box">
+            <div class="block flex-end">
+              <div class="item2"></div>
+              <div class="item2"></div>
+              <div class="item2"></div>
+            </div>
+            <p class="g-text">flex-end</p>
+            <div class="a-center">
+              <div class="item2"></div>
+              <div class="item2"></div>
+              <div class="item2"></div>
+              <div class="item2"></div>
+            </div>
+            <p class="g-text">center</p>
+          </div>
+          <div class="box plus">
+            <div class="baseline">
+              <div class="item"></div>
+              <div class="item2"></div>
+              <div class="item1"></div>
+              <div class="item"></div>
+            </div>
+            <p class="g-text">baseline</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">7</div>
+          <div class="t-text">
+            <p class="text-title">align-content: strech;</p>
+            <p class="sub-title">-webkit-align-content: strech;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i>выравнивает строк flex-элементов вдоль поперечной оси.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i>
+              strech / flex-strat / flex-end / center / space-between /
+              space-around.</i
+            >
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner new">
+          <div class="box add2">
+            <p class="g-text">strech</p>
+            <div class="strech-a">
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+            </div>
+            <div class="f-strat">
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+            </div>
+            <p class="g-text">flex-start</p>
+          </div>
+          <div class="box add2">
+            <p class="g-text">flex-end</p>
+            <div class="f-end">
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+            </div>
+            <div class="block s-a">
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+            </div>
+            <p class="g-text">space-around</p>
+          </div>
+          <div class="box add2">
+            <p class="g-text">center</p>
+            <div class="center-c">
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+            </div>
+            <div class="s-b">
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+              <div class="item3"></div>
+            </div>
+            <p class="g-text">space-between</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="place"></div>
+    <p class="title">Свойства flex-элемента</p>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">1</div>
+          <div class="t-text">
+            <p class="text-title">order: 0;</p>
+            <p class="sub-title">-webkit-order: 0;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение: <i>определение порядка расстоновки элемента.</i>
+          </p>
+          <p class="mini-title">Возможные значения: <i>целое число.</i></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="new-block">
+            <div class="card o-1">1</div>
+            <div class="card o-2">2</div>
+            <div class="card o-3">3</div>
+            <div class="card o-4">4</div>
+            <div class="card o-5">5</div>
+          </div>
+          <p class="g-text">order</p>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">2</div>
+          <div class="t-text">
+            <p class="text-title">flex-grow: 0;</p>
+            <p class="sub-title">-webkit-flex-grow: 0;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение: <i>указывакт фактор растягивания fflex-элемента.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения: <i>целое неотрицательное число.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="container">
+          <div class="inner">
+            <div class="new-block">
+              <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div>
+            </div>
+            <p class="g-text">flex-grow: 1</p>
+          </div>
+          <div class="inner">
+            <div class="new-block">
+              <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card f-g3">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div>
+            </div>
+            <p class="g-text">flex-grow: 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">3</div>
+          <div class="t-text">
+            <p class="text-title">flex-shrink: 1;</p>
+            <p class="sub-title">-webkit-flex-shrink: 1;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение: <i>указывакт фактор сужения fflex-элемента.</i>
+          </p>
+          <p class="mini-title">Возможные значения: <i>0.</i></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="container">
+          <div class="inner">
+            <div class="new-block">
+              <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div>
+              <div class="card">6</div>
+              <div class="card">7</div>
+              <div class="card">8</div>
+              <div class="card">9</div>
+              <div class="card">10</div>
+            </div>
+            <p class="g-text">flex-shrink: 1</p>
+          </div>
+          <div class="inner">
+            <div class="new-block">
+              <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card f-sh0">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div>
+              <div class="card">6</div>
+              <div class="card">7</div>
+              <div class="card">8</div>
+              <div class="card">9</div>
+              <div class="card">10</div>
+            </div>
+            <p class="g-text">flex-shrink: 0</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">4</div>
+          <div class="t-text">
+            <p class="text-title">flex-basis: auto;</p>
+            <p class="sub-title">-webkit-flex-basis: auto;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение: <i>указывакт исходный главный размер flex-элемента.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения: <i>длина элемента в пикселях.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="container">
+          <div class="inner">
+            <div class="new-block">
+              <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card">3</div>
+              <div class="card">4</div>
+              <div class="card">5</div>
+            </div>
+            <p class="g-text">flex-basis: auto</p>
+          </div>
+          <div class="inner">
+            <div class="new-block">
+              <div class="card">1</div>
+              <div class="card">2</div>
+              <div class="card">3</div>
+              <div class="card f-b">4</div>
+              <div class="card">5</div>
+            </div>
+            <p class="g-text">flex-basis: 240px</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">5</div>
+          <div class="t-text">
+            <p class="text-title">flex: 0 1 auto;</p>
+            <p class="sub-title">-webkit-flex: 0 1 auto;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение:
+            <i
+              >сокращает запись для свойств flex-grow, flex-shrink и
+              flex-basis.</i
+            >
+          </p>
+          <p class="mini-title">
+            Возможные значения: <i>см свойства 2, 3 и 4.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right"></div>
+    </section>
+    <section class="parent">
+      <div class="left">
+        <div class="inner__text">
+          <div class="number">6</div>
+          <div class="t-text">
+            <p class="text-title">align-self: auto;</p>
+            <p class="sub-title">-webkit-align-self: auto;</p>
+          </div>
+        </div>
+        <div class="inner__text adding">
+          <p class="mini-title">
+            Назначение: <i>переопределякт выравнивание элемента.</i>
+          </p>
+          <p class="mini-title">
+            Возможные значения:
+            <i> auto / flex-start / flex-end / center / baseline / strech.</i>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="inner">
+          <div class="new-block">
+            <div class="item1 a-1"></div>
+            <div class="item2 a-4"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item2 a-2"></div>
+            <div class="item3 a-3"></div>
+          </div>
+          <p class="g-text">align-self</p>
+        </div>
+      </div>
+    </section>
+    <div class="place"></div>
+  </body>
+</html>
